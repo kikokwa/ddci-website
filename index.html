@@ -1,176 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dry Cattle Corridor Initiative (DCCI)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dry Cattle Corridor Initiative</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: #333;
+      background: #fff;
       line-height: 1.6;
     }
 
-    /* HEADER */
-    header {
-      width: 100%;
+    /* NAVBAR */
+    nav {
+      padding: 15px 40px;
       display: flex;
       align-items: center;
-      padding: 15px 40px;
-      background: white;
+      justify-content: space-between;
       border-bottom: 1px solid #ddd;
+      background: #fff;
     }
 
-    header img {
-      height: 70px;
-      margin-right: 15px;
+    nav img {
+      height: 60px;
     }
 
-    header h1 {
-      font-size: 26px;
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
       margin: 0;
-      font-weight: 600;
+      padding: 0;
     }
 
-    /* HERO SECTION */
-    .hero {
-      width: 100%;
-      height: 450px;
-      background-image: url('hero.jpg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(0.5px);
-    }
-
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      text-align: center;
-      max-width: 800px;
-    }
-
-    .hero-text h2 {
-      font-size: 42px;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      padding: 12px 24px;
-      background: #b87333;
-      color: white;
+    nav ul li a {
       text-decoration: none;
-      border-radius: 5px;
+      color: #333;
       font-size: 16px;
+    }
+
+    /* SECTION WRAPPER */
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 10px;
       font-weight: 600;
     }
 
-    /* CONTENT SECTIONS */
-    section {
-      padding: 50px 40px;
-      max-width: 1100px;
-      margin: auto;
+    p {
+      font-size: 17px;
+      margin-bottom: 20px;
     }
 
-    section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      font-weight: bold;
-      color: #7a4e1d;
+    ul {
+      margin-left: 20px;
+      font-size: 17px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #f3f3f3;
-      margin-top: 40px;
       font-size: 14px;
+      background: #f6f6f6;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="corridor.png" alt="DCCI Logo" />
-    <h1>The Dry Cattle Corridor Initiative</h1>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-text">
-      <h2>Restoring Life in Uganda’s Dry Cattle Corridor</h2>
-      <p>Reforesting farms, restoring soils, empowering pastoral communities.</p>
-      <a href="#impact" class="btn">Join the Movement</a>
-    </div>
-  </section>
-
-  <!-- THE PROBLEM -->
-  <section>
-    <h3>The Problem</h3>
-    <p>
-      Uganda’s dry cattle corridor—spanning Kiruhura, Lyantonde, Ssembabule,
-      Nakasongola, Nakaseke, and Luweero—faces accelerated land degradation.
-      Overgrazing, climate change, and continuous droughts have led to severe
-      soil loss, reduced fodder, and diminishing livestock productivity.
-    </p>
-  </section>
-
-  <!-- OUR APPROACH -->
-  <section>
-    <h3>Our Approach</h3>
-    <p>
-      DCCI partners with farmers and local leaders to reforest degraded farms,
-      restore soils, and build resilience through climate-smart techniques.
-      Our work includes:
-    </p>
+  <!-- NAVIGATION -->
+  <nav>
+    <img src="corridor.png" alt="DCCI Logo">
     <ul>
-      <li>Farmer training on soil and water conservation</li>
-      <li>Distribution of drought-tolerant tree species</li>
-      <li>Farm mapping and restoration planning</li>
-      <li>Community reforestation drives and youth engagement</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </section>
+  </nav>
+
+  <!-- HERO (Minimalist: No background image) -->
+  <div class="section">
+    <h2>Greening Uganda's Dry Cattle Corridor</h2>
+    <p>
+      The Dry Cattle Corridor Initiative partners with farmers and local
+      communities to restore degraded lands, improve soil fertility, and
+      build climate resilience.
+    </p>
+  </div>
+
+  <!-- PROBLEM -->
+  <div class="section">
+    <h2>The Problem</h2>
+    <p>
+      Uganda’s dry cattle corridor—stretching across Kiruhura, Lyantonde,
+      Ssembabule, Nakaseke, Nakasongola, and Luweero—faces severe land
+      degradation worsened by drought, deforestation, and overgrazing.
+    </p>
+  </div>
+
+  <!-- APPROACH -->
+  <div class="section">
+    <h2>Our Approach</h2>
+    <p>We restore farms and empower pastoral families by focusing on:</p>
+    <ul>
+      <li>Soil and water conservation practices</li>
+      <li>Distribution of drought-resistant tree species</li>
+      <li>Community-led reforestation drives</li>
+      <li>Training farmers in sustainable land management</li>
+    </ul>
+  </div>
 
   <!-- IMPACT -->
-  <section id="impact">
-    <h3>Our Impact</h3>
-    <p>
-      Through targeted interventions, we help communities achieve:
-    </p>
+  <div class="section">
+    <h2>Our Impact</h2>
     <ul>
+      <li>Improved soil moisture and fertility</li>
       <li>Increased fodder availability</li>
-      <li>Improved soil fertility and moisture retention</li>
-      <li>Reduced vulnerability to droughts</li>
-      <li>Restored biodiversity and greener landscapes</li>
+      <li>Greater climate resilience among pastoral households</li>
+      <li>Restoration of biodiversity and natural vegetation</li>
     </ul>
-  </section>
+  </div>
 
-  <!-- TREES -->
-  <section>
-    <h3>Recommended Tree Species for Restoration</h3>
+  <!-- TREE SPECIES -->
+  <div class="section">
+    <h2>Recommended Tree Species</h2>
     <ul>
       <li>Acacia species</li>
       <li>Calliandra</li>
@@ -179,11 +142,10 @@
       <li>Mangifera indica (Mango)</li>
       <li>Markhamia lutea</li>
     </ul>
-  </section>
+  </div>
 
-  <!-- FOOTER -->
   <footer>
-    © 2025 The Dry Cattle Corridor Initiative — drycorridorinitiative@gmail.com
+    © 2025 The Dry Cattle Corridor Initiative | drycorridorinitiative@gmail.com
   </footer>
 
 </body>
